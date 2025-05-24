@@ -24,7 +24,7 @@ const Signup = () => {
       return;
     }
     localStorage.setItem("popx-user", JSON.stringify(form));
-    navigate("/settings");
+    navigate("/profile");
   };
 
   return (

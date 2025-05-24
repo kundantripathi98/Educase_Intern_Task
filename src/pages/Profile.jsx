@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profileImg from "../assets/profile.png";
+// import profileImg from "../assets/profile.png";
 
 const Profile = () => {
   const [user, setUser] = useState({
@@ -29,11 +29,11 @@ const Profile = () => {
 
         <div className="flex items-center gap-4 mt-6">
           <div className="relative">
-            <img
+            {/* <img
               src={profileImg}
               alt="profile"
               className="w-16 h-16 rounded-full object-cover"
-            />
+            /> */}
             <div className="absolute bottom-0 right-0 bg-violet-600 rounded-full p-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
