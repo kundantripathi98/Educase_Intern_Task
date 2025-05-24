@@ -64,5 +64,4 @@ const Profile = () => {
     </div>
   );
 };
-ind
 export default Profile;
