@@ -4,6 +4,7 @@ import Rootlayout from "./layout/Rootlayout";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
+import NotFound404 from "./pages/NotFound404";
 
 const router = createBrowserRouter([
   {
@@ -26,10 +27,10 @@ const router = createBrowserRouter([
         path: "profile",
         element: <Profile/>
       },
-      // {
-      //   path: "*",
-      //   element: <NotFound404/>
-      // },
+      {
+        path: "*",
+        element: <NotFound404/>
+      },
     ]
   }
 ])

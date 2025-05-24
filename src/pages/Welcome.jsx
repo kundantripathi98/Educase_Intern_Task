@@ -1,11 +1,14 @@
 // import { useNavigate } from "react-router-dom";
 
 import { Link } from "react-router-dom";
+import Loader from "../components/Loader";
 
 const Welcome = () => {
 //   const navigate = useNavigate();
 
   return (
+    <>
+    <Loader/>
     <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="w-[375px] min-h-screen bg-white flex flex-col justify-end gap-[2.5vw] px-6 py-10">
         <div className="">
@@ -30,7 +33,8 @@ const Welcome = () => {
           </Link>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 
