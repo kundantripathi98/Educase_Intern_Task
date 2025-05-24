@@ -21,8 +21,8 @@ const Welcome = () => {
   return (
     <>
     <Loader/>
-    <div className="min-h-screen flex justify-center items-center bg-gray-100 overflow-hidden">
-      <div className="w-[375px] min-h-screen bg-white flex flex-col justify-end gap-[2.5vw] px-6 py-10">
+    <div className="h-fit flex justify-center items-center bg-gray-100 overflow-hidden">
+      <div className="w-[375px] h-[100dvh] bg-white flex flex-col justify-end gap-[2.5vw] px-6 py-10">
         <div className="doc">
           <h1 className="text-2xl font-bold text-gray-900">Welcome to PopX</h1>
           <p className=" text-gray-600">

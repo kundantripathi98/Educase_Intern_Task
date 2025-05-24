@@ -33,8 +33,8 @@ const Profile = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-100">
-      <div className="w-[375px] min-h-screen bg-white p-4">
+    <div className="h-fit flex justify-center items-center bg-gray-100">
+      <div className="w-[375px] h-[100dvh] bg-white p-4">
         <h2 className="text-lg font-[400] text-gray-900 border-b pb-3 profile">
           Account Settings
         </h2>

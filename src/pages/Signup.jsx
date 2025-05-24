@@ -41,8 +41,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-100">
-      <div className="w-[375px] min-h-screen bg-white px-6 py-10">
+    <div className="h-fit flex justify-center items-center bg-gray-100">
+      <div className="w-[375px] h-[100dvh] bg-white px-6 py-10">
        <h2 className="text-2xl font-bold text-gray-900 leading-snug signup">
   Create your <br /> PopX account
 </h2>
