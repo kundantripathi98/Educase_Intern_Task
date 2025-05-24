@@ -22,9 +22,12 @@ const Welcome = () => {
               Create Account
             </button>
           </Link>
-          <button className="w-full bg-violet-200 text-black font-semibold py-3 rounded-lg cursor-pointer">
-            Already Registered? Login
-          </button>
+
+          <Link to="/login">
+            <button className="w-full bg-violet-200 text-black font-semibold py-3 rounded-lg cursor-pointer">
+              Already Registered? Login
+            </button>
+          </Link>
         </div>
       </div>
     </div>
