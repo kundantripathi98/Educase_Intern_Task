@@ -17,6 +17,7 @@ const Profile = () => {
   const [user, setUser] = useState({
     fullName: "Marry Doe",
     email: "Marry@Gmail.Com",
+    company: "ABC-Comapny",
     description:
       "Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquam Erat, Sed Diam",
   });
@@ -28,6 +29,7 @@ const Profile = () => {
         ...prev,
         fullName: saved.fullName || prev.fullName,
         email: saved.email || prev.email,
+        company: saved.company || prev.company,
       }));
     }
   }, []);
@@ -54,6 +56,7 @@ const Profile = () => {
           <div>
             <h3 className="text-base font-semibold text-gray-900 profile">{user.fullName}</h3>
             <p className="text-sm text-gray-600 profile">{user.email}</p>
+            <p className="text-[0.9vw] max-md:text-[3.5vw] text-gray-300 profile">{user.company}</p>
           </div>
         </div>
 
