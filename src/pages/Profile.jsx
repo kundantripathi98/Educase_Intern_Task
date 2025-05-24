@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap" ;
+import icon from "../assets/camIcon.svg"
 
 const Profile = () => {
   useGSAP(()=>{
@@ -45,23 +46,8 @@ const Profile = () => {
               alt="profile"
               className="w-16 h-16 rounded-full object-cover"
             />
-            <div className="absolute bottom-0 right-0 bg-violet-600 rounded-full p-1">
-              <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  fill="none"
-  viewBox="0 0 24 24"
-  stroke="currentColor"
-  stroke-width="2"
->
-  <path
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    d="M3 7h2l2-3h10l2 3h2a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V8a1 1 0 011-1zm9 3a4 4 0 100 8 4 4 0 000-8z"
-  />
-</svg>
-
+            <div className="absolute bottom-0 right-[-2%] p-1">
+              <img src={icon} alt="" />
             </div>
           </div>
 
