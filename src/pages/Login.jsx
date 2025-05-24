@@ -1,7 +1,20 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap" ;
 
 const Login = () => {
+
+   useGSAP(()=>{
+    gsap.from(".login",{
+      y: "100%",
+      opacity: 0,
+      duration: 2,
+      stagger: 0.2,
+      ease: "power3.inOut"
+    })
+  }, []);
+
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -22,14 +35,14 @@ const Login = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="w-[375px] min-h-screen bg-white px-6 py-10">
-        <h2 className="text-2xl font-bold text-gray-900">
+        <h2 className="text-2xl font-bold text-gray-900 login">
           Sign in to your PopX account
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 login">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         </p>
 
-        <div className="mt-6">
+        <div className="mt-6 login">
           <label className="text-sm font-semibold text-violet-700">Email address</label>
           <input
             type="email"
@@ -40,7 +53,7 @@ const Login = () => {
           />
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 login">
           <label className="text-sm font-semibold text-violet-700">Password</label>
           <input
             type="password"
@@ -53,7 +66,7 @@ const Login = () => {
 
         <button
           onClick={handleLogin}
-          className="w-full mt-6 bg-violet-600 text-white font-semibold py-3 rounded-lg"
+          className="w-full mt-6 bg-violet-600 text-white font-semibold py-3 rounded-lg login"
         >
           Login
         </button>

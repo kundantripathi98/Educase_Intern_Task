@@ -1,7 +1,20 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap" ;
 
 const Signup = () => {
+
+   useGSAP(()=>{
+    gsap.from(".signup",{
+      y: "100%",
+      opacity: 0,
+      duration: 2,
+      stagger: 0.2,
+      ease: "power3.inOut"
+    })
+  }, []);
+
   const navigate = useNavigate();
   const [form, setForm] = useState({
     fullName: "",
@@ -30,12 +43,12 @@ const Signup = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="w-[375px] min-h-screen bg-white px-6 py-10">
-       <h2 className="text-2xl font-bold text-gray-900 leading-snug">
+       <h2 className="text-2xl font-bold text-gray-900 leading-snug signup">
   Create your <br /> PopX account
 </h2>
 
 
-        <div className="mt-6">
+        <div className="mt-6 signup">
           <label className="text-sm font-semibold text-violet-700">Full Name *</label>
           <input
             name="fullName"
@@ -46,7 +59,7 @@ const Signup = () => {
           />
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 signup">
           <label className="text-sm font-semibold text-violet-700">Phone number *</label>
           <input
             name="phone"
@@ -57,7 +70,7 @@ const Signup = () => {
           />
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 signup">
           <label className="text-sm font-semibold text-violet-700">Email address *</label>
           <input
             name="email"
@@ -69,7 +82,7 @@ const Signup = () => {
           />
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 signup">
           <label className="text-sm font-semibold text-violet-700">Password *</label>
           <input
             name="password"
@@ -81,7 +94,7 @@ const Signup = () => {
           />
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 signup">
           <label className="text-sm font-semibold text-violet-700">Company name *</label>
           <input
             name="company"
@@ -92,7 +105,7 @@ const Signup = () => {
           />
         </div>
 
-        <div className="mt-6">
+        <div className="mt-6 signup">
           <p className="text-sm font-semibold text-gray-900">Are you an Agency? *</p>
           <div className="flex gap-4 mt-2">
             <label className="flex items-center gap-2">
@@ -122,7 +135,7 @@ const Signup = () => {
 
         <button
           onClick={handleSubmit}
-          className="w-full mt-6 bg-violet-600 text-white font-semibold py-3 rounded-lg"
+          className="w-full mt-6 bg-violet-600 text-white font-semibold py-3 rounded-lg signup"
         >
           Create Account
         </button>
