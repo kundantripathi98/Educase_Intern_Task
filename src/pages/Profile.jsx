@@ -35,13 +35,14 @@ const Profile = () => {
   }, []);
 
   return (
-    <div className="h-fit flex justify-center items-center bg-gray-100">
-      <div className="w-[375px] h-[100dvh] bg-white p-4">
-        <h2 className="text-lg font-[400] text-gray-900 border-b pb-3 profile">
+    <div className="h-fit flex justify-center items-center bg-white">
+      <div className="w-[375px] h-[100dvh] p-4">
+        <h2 className="text-lg font-[400] text-gray-900 pb-3 profile">
           Account Settings
         </h2>
 
-        <div className="flex items-center gap-4 mt-6 profile">
+        <div className="bg-gray-100 h-full pt-[1.2vw] px-[0.9vw]">
+          <div className="flex items-center gap-4 mt-6 profile">
           <div className="relative">
             <img
               src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
@@ -58,11 +59,12 @@ const Profile = () => {
             <p className="text-sm text-gray-600 profile">{user.email}</p>
             <p className="text-[0.9vw] max-md:text-[3.5vw] text-gray-300 profile">{user.company}</p>
           </div>
-        </div>
+          </div>
 
-        <p className="text-sm text-gray-700 mt-6 leading-relaxed border-t pt-4 profile">
-          {user.description}
-        </p>
+          <p className="text-sm text-gray-700 mt-6 leading-relaxed pt-4 profile">
+            {user.description}
+          </p>
+        </div>
       </div>
     </div>
   );
