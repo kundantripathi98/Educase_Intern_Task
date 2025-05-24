@@ -13,7 +13,7 @@ const Login = () => {
       return;
     }
     if (savedUser.email === email && savedUser.password === password) {
-      navigate("/settings");
+      navigate("/login");
     } else {
       alert("Invalid credentials.");
     }
