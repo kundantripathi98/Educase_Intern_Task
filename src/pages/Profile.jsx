@@ -34,8 +34,8 @@ const Profile = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="w-[375px] min-h-screen bg-white p-4">
-        <h2 className="text-lg font-semibold text-gray-900 border-b pb-3 profile">
-          Admin Profile
+        <h2 className="text-lg font-[400] text-gray-900 border-b pb-3 profile">
+          Account Settings
         </h2>
 
         <div className="flex items-center gap-4 mt-6 profile">
@@ -47,19 +47,21 @@ const Profile = () => {
             />
             <div className="absolute bottom-0 right-0 bg-violet-600 rounded-full p-1">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15.232 5.232l3.536 3.536M9 11l6.293-6.293a1 1 0 011.414 0l1.586 1.586a1 1 0 010 1.414L11 15H7v-4l2-2z"
-                />
-              </svg>
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke="currentColor"
+  stroke-width="2"
+>
+  <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M3 7h2l2-3h10l2 3h2a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V8a1 1 0 011-1zm9 3a4 4 0 100 8 4 4 0 000-8z"
+  />
+</svg>
+
             </div>
           </div>
 

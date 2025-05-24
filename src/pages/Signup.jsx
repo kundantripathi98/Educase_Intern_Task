@@ -49,7 +49,7 @@ const Signup = () => {
 
 
         <div className="mt-6 signup">
-          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Full Name <span className="text-red-600 text-[20px] font-[100]">*</span></label>
+          <label className="text-sm font-semibold text-[#6C25FF] absolute bg-white left-[5%] top-[-25%]">Full Name <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="fullName"
             placeholder="Enter full name"
@@ -60,7 +60,7 @@ const Signup = () => {
         </div>
 
         <div className="mt-4 signup">
-          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Phone number <span className="text-red-600 text-[20px] font-[100]">*</span></label>
+          <label className="text-sm font-semibold text-[#6C25FF] absolute bg-white left-[5%] top-[-25%]">Phone number <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="phone"
             placeholder="Enter phone number"
@@ -71,7 +71,7 @@ const Signup = () => {
         </div>
 
         <div className="mt-4 signup">
-          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Email address <span className="text-red-600 text-[20px] font-[100]">*</span></label>
+          <label className="text-sm font-semibold text-[#6C25FF] absolute bg-white left-[5%] top-[-25%]">Email address <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="email"
             type="email"
@@ -83,7 +83,7 @@ const Signup = () => {
         </div>
 
         <div className="mt-4 signup">
-          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Password <span className="text-red-600 text-[20px] font-[100]">*</span></label>
+          <label className="text-sm font-semibold text-[#6C25FF] absolute bg-white left-[5%] top-[-25%]">Password <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="password"
             type="password"
@@ -95,7 +95,7 @@ const Signup = () => {
         </div>
 
         <div className="mt-4 signup">
-          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Company name <span className="text-red-600 text-[20px] font-[100]">*</span></label>
+          <label className="text-sm font-semibold text-[#6C25FF] absolute bg-white left-[5%] top-[-25%]">Company name <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="company"
             placeholder="Enter company name"
