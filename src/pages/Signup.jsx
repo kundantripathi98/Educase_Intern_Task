@@ -49,64 +49,64 @@ const Signup = () => {
 
 
         <div className="mt-6 signup">
-          <label className="text-sm font-semibold text-violet-700">Full Name *</label>
+          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Full Name <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="fullName"
             placeholder="Enter full name"
             value={form.fullName}
             onChange={handleChange}
-            className="mt-1 p-3 border rounded w-full"
+            className="mt-1 p-3 border rounded-[0.7vw] w-full border-[#CBCBCB] outline-[#CBCBCB]"
           />
         </div>
 
         <div className="mt-4 signup">
-          <label className="text-sm font-semibold text-violet-700">Phone number *</label>
+          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Phone number <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="phone"
             placeholder="Enter phone number"
             value={form.phone}
             onChange={handleChange}
-            className="mt-1 p-3 border rounded w-full"
+            className="mt-1 p-3 border rounded-[0.7vw] w-full border-[#CBCBCB] outline-[#CBCBCB]"
           />
         </div>
 
         <div className="mt-4 signup">
-          <label className="text-sm font-semibold text-violet-700">Email address *</label>
+          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Email address <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="email"
             type="email"
             placeholder="Enter email address"
             value={form.email}
             onChange={handleChange}
-            className="mt-1 p-3 border rounded w-full"
+            className="mt-1 p-3 border rounded-[0.7vw] w-full border-[#CBCBCB] outline-[#CBCBCB]"
           />
         </div>
 
         <div className="mt-4 signup">
-          <label className="text-sm font-semibold text-violet-700">Password *</label>
+          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Password <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="password"
             type="password"
             placeholder="Enter password"
             value={form.password}
             onChange={handleChange}
-            className="mt-1 p-3 border rounded w-full"
+            className="mt-1 p-3 border rounded-[0.7vw] w-full border-[#CBCBCB] outline-[#CBCBCB]"
           />
         </div>
 
         <div className="mt-4 signup">
-          <label className="text-sm font-semibold text-violet-700">Company name *</label>
+          <label className="text-sm font-semibold text-violet-700 absolute bg-white left-[5%] top-[-25%]">Company name <span className="text-red-600 text-[20px] font-[100]">*</span></label>
           <input
             name="company"
             placeholder="Enter company name"
             value={form.company}
             onChange={handleChange}
-            className="mt-1 p-3 border rounded w-full"
+            className="mt-1 p-3 border rounded-[0.7vw] w-full border-[#CBCBCB] outline-[#CBCBCB]"
           />
         </div>
 
         <div className="mt-6 signup">
-          <p className="text-sm font-semibold text-gray-900">Are you an Agency? *</p>
+          <p className="text-sm font-semibold text-gray-900">Are you an Agency? <span className="text-red-600 text-[20px] font-[100]">*</span></p>
           <div className="flex gap-4 mt-2">
             <label className="flex items-center gap-2">
               <input

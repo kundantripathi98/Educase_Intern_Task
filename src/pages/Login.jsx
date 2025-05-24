@@ -43,24 +43,24 @@ const Login = () => {
         </p>
 
         <div className="mt-6 login">
-          <label className="text-sm font-semibold text-violet-700">Email address</label>
+          <label className="text-sm font-semibold text-[#6C25FF] absolute bg-white left-[4%] top-[-10%] pl-[0.4vw] pr-[2vw]">Email address</label>
           <input
             type="email"
             placeholder="Enter email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 p-3 border rounded w-full"
+            className="mt-1 p-3 border rounded-[0.7vw] w-full border-[#CBCBCB] outline-[#CBCBCB]"
           />
         </div>
 
         <div className="mt-4 login">
-          <label className="text-sm font-semibold text-violet-700">Password</label>
+          <label className="text-sm font-semibold text-[#6C25FF] absolute bg-white left-[4%] top-[-10%] pl-[0.4vw] pr-[2vw]">Password</label>
           <input
             type="password"
             placeholder="Enter password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="mt-1 p-3 border rounded w-full"
+            className="mt-1 p-3 border rounded-[0.7vw] w-full border-[#CBCBCB] outline-[#CBCBCB]"
           />
         </div>
 
